@@ -7,7 +7,7 @@ class App extends Component {
     this.state = {
       amountDue: '',
       amountReceived: '',
-      changeDue: '',
+      changeDue: 'Enter amount due and amount received on the left',
       twenties: '0',
       tens: '0', 
       fives: '0',
@@ -119,9 +119,9 @@ class App extends Component {
                 <div className='alert alert-success'>
                   {this.state.changeDue}
                 </div>
-                <div className='invisible alert alert-danger'>
+                {/* <div className='invisible alert alert-danger'>
                   <strong>Danger:</strong> Additional money owed
-                </div>
+                </div> */}
               {/* output panels, top row begin */}
               <div className='row'>
                 <div className='col-md-3'>
