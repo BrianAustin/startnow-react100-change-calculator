@@ -56,7 +56,7 @@ class App extends Component {
     const nickels = Math.floor(((cents%25)%10)/5);         
     const pennies = Math.floor((cents%25)%10)%5;
     
-    //console.log(twenties, tens, fives, ones, quarters, dimes, nickels, pennies);
+      //console.log(twenties, tens, fives, ones, quarters, dimes, nickels, pennies);
 
     this.setState({
       changeDue: 'The total change due is $' + changeDue,
@@ -69,7 +69,6 @@ class App extends Component {
       nickels,
       pennies
     });
-    //return amountReceived//(amountReceived - amountDue).toFixed(2);
   }
 
   handleClick(e) {
@@ -79,8 +78,6 @@ class App extends Component {
     const amountReceived = this.state.amountReceived;
     
     this.calculate(amountDue, amountReceived);
-
-    // const changeDue = this.calculate(amountDue, amountReceived);
   }
 
   render() {
